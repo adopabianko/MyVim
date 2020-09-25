@@ -39,9 +39,8 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'default'
 
-"Indent Line
-let g:indentLine_setColors = 0
-let g:indentLine_color_term = 239
+"Shortcut toggle treeview NERDTree
+nnoremap <C-n> :NERDTreeToggle<CR>
 
 call plug#begin('~/.vim/plugged')
 
