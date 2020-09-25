@@ -93,3 +93,14 @@ call plug#end()
 set background=dark
 syntax enable
 colorscheme gruvbox
+
+
+" Notes
+" Undo = u
+" Redp = Ctrl + R
+" Delete a single Line = dd
+" Delete a single word = dw
+" Delete multiple line = [#]dd ex: 3dd (delete 3 line)
+" Delete all line = :%d
+" Delete from current line to the beginning of file = dgg:w
+" Remove line containing a spesific word = :g /asyncCall/d
