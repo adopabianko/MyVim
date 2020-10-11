@@ -2,12 +2,12 @@ set number
 set nowrap
 set encoding=utf-8
 
-autocmd! bufwritepost .vimrc source %
+"autocmd! bufwritepost .vimrc source %
 
-set tabstop=2
-set softtabstop=2
+set tabstop=4
+set softtabstop=4
 set expandtab
-set shiftwidth=2
+set shiftwidth=4
 set autochdir
 
 set list listchars=tab:»·,trail:·
@@ -27,7 +27,7 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 
-set cursorline
+"set cursorline
 
 set title
 
@@ -59,8 +59,8 @@ Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 Plug 'junegunn/fzf.vim'
-  map <leader>f :Files<CR>
-  map <C-P> :GFiles<CR>
+  map <C-P> :Files<CR>
+  map <C-G> :GFiles<CR>
   map <C-B> :Buffer<CR>
 
 Plug '~/my-prototype-plugin'
@@ -88,11 +88,15 @@ Plug 'EinfachToll/DidYouMean'
 
 Plug 'ap/vim-css-color'
 
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+Plug 'ycm-core/YouCompleteMe'
+
 call plug#end()
 
 set background=dark
 syntax enable
-colorscheme gruvbox
+colorscheme dracula
 
 
 " Notes
